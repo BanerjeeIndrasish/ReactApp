@@ -1,0 +1,13 @@
+[
+{"Id": 1, "Project": "Synopsis", "TotalAmount": "8000$", "PaymentDone": "", "Delivery": "WIP"},
+{"Id": 2, "Project": "Maze Master", "TotalAmount": "3000$", "PaymentDone": "", "Delivery": "WIP"},
+{"Id": 3, "Project": "Brawl-VR", "TotalAmount": "4800$", "PaymentDone": "", "Delivery": "WIP"},
+{"Id": 4, "Project": "Room-VR", "TotalAmount": "3600$", "PaymentDone": "3600$", "Delivery": "Done"},
+{"Id": 5, "Project": "Pistol Arena", "TotalAmount": "2700$", "PaymentDone": "2700$", "Delivery": "Done"},
+{"Id": 6, "Project": "Space Fighter", "TotalAmount": "1000$", "PaymentDone": "1000$", "Delivery": "Done"},
+{"Id": 7, "Project": "World War", "TotalAmount": "3000$", "PaymentDone": "3000$", "Delivery": "Done"},
+{"Id": 8, "Project": "Escape Door", "TotalAmount": "2200$", "PaymentDone": "2200$", "Delivery": "Done"},
+{"Id": 9, "Project": "Room Fight", "TotalAmount": "2000$", "PaymentDone": "2000$", "Delivery": "Done"},
+{"Id": 10, "Project": "Sniper Master", "TotalAmount": "2500$", "PaymentDone": "2500$", "Delivery": "Done"},
+{"Id": 11, "Project": "Build-Up", "TotalAmount": "2000$", "PaymentDone": "2000$", "Delivery": "Done"}
+]

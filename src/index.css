@@ -1,0 +1,136 @@
+html,.Home,body, #root{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+/* .Navbar{        //// From Here
+  margin: 0 auto;
+  height: 7vh;
+  background-color: blueviolet;
+}
+
+.Body{
+  width: 100vw;
+  height: 83%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.Footer{
+  
+  height: 10vh;
+}
+
+.Body img{
+  height: 83vh;
+  width: 100vw;
+}
+
+.leftBtn, .rightBtn{
+  height: 50px;
+  width: 50px;
+}
+
+button{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 0;
+  top: 40%;
+  font-size: 50px;
+}    For Trip Page*/
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login-container{
+  width: 83vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+.home-container{
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+
+}
+.pages{
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+
+.box{
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.buttons{
+  margin: 10px 60px;
+  width: 70vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.section{
+  margin: 50px 150px;
+  height: 70vh;
+  width: 60vw;
+  
+}
+
+.table th,
+.table td{
+  border: 1px solid black;
+  padding: 5px;
+}
+.container{
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:darkcyan;
+}
+
+.form-box{
+  width: 40vw;
+  height: 70vh;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.input-group{
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-field{
+  width: 15vw;
+}
+
+

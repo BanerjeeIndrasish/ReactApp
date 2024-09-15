@@ -1,0 +1,13 @@
+[
+{"Id": 1, "Name": "Indrasish", "Role": "Sr. Game-Developer & Jr. FullStack", "Salary": 20000, "Task": "Working On Page Optimazation"},
+{"Id": 2, "Name": "Amit", "Role": "Sr. Game-Developer", "Salary": 20000, "Current Task": ""},
+{"Id": 3, "Name": "Rituporno", "Role": "Sr. Game-Developer", "Salary": 20000, "Current Task": ""},
+{"Id": 4, "Name": "Sourav", "Role": "Sr. Game-Developer", "Salary": 20000, "Current Task": ""},
+{"Id": 5, "Name": "Subham", "Role": "Sr. Fullstack-Developer", "Salary": 20000, "Current Task": ""},
+{"Id": 6, "Name": "Sayantan", "Role": "Sr. Game-Developer", "Salary": 20000, "Current Task": ""},
+{"Id": 7, "Name": "Ramnath", "Role": "Jr. Game-Developer", "Salary": 12000, "Current Task": ""},
+{"Id": 8, "Name": "Debanuj", "Role": "Jr. Game-Developer", "Salary": 16000, "Current Task": ""},
+{"Id": 9, "Name": "Rohan", "Role": "Lead Designer & Tester", "Salary": 20000, "Current Task": ""},
+{"Id": 10, "Name": "Tanmay", "Role": "Animator & Rigger", "Salary": 8000, "Current Task": ""},
+{"Id": 11, "Name": "Dhritiraj", "Role": "Modeler", "Salary": 8000, "Current Task": ""}
+]

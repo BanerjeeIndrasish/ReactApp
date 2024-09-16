@@ -35,7 +35,7 @@ export default function Login({isAuthentic}) {
         axios.post(baseURL+"/"+"signin", values)
         .then(res => {
             if(title === "Sign In"){   // Changed To Title Check From Now
-                if(res.status === 200){
+                if(res.status===200 && res.data.message === "User Found"){
                     console.log("Successful ", res.data.message);
                     setServerResponse(res.data.message);
                     localStorage.setItem("authToken", "true")

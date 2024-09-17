@@ -43,57 +43,50 @@ button{
   font-size: 50px;
 }    For Trip Page*/
 
+/* Base Styles for Mobile (default) */
 .buttons{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Smaller gap on mobile */
 }
+
 .login-container{
-  width: 83vw;
+  width: 90vw; /* Use more space on mobile */
   height: 100vh;
   background-color: lightgray;
 }
-.home-container{
-  margin: 0 auto;
-  width: 80vw;
-  height: 100vh;
 
+.home-container{
+  width: 90vw;
+  height: 100vh;
 }
+
 .pages{
   margin-top: 20px;
-  height: 100%;
   width: 100%;
+  height: auto; /* Adjust height */
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: space-between;
   background-color: lightgrey;
 }
 
 .box{
   height: 50px;
-  width: 150px;
-  font-size: 20px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  width: 80vw; /* Full width on mobile */
+  font-size: 18px;
   background-color: burlywood;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center; /* Center the content vertically */
 }
-.buttons{
-  margin: 10px 60px;
-  width: 70vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-}
+
 .section{
-  margin: 50px 150px;
-  height: 70vh;
-  width: 60vw;
-  
+  margin: 20px;
+  width: 90vw; /* Full width on mobile */
+  height: auto;
 }
 
 .table th,
@@ -101,36 +94,102 @@ button{
   border: 1px solid black;
   padding: 5px;
 }
+
 .container{
   margin: 0 auto;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:darkcyan;
+  background-color: darkcyan;
 }
 
 .form-box{
-  width: 40vw;
-  height: 70vh;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  width: 90vw; /* Full width on mobile */
+  height: auto;
+  padding: 20px; /* Add some padding */
   background-color: aquamarine;
 }
 
 .input-group{
-  width: 25vw;
+  width: 100%; /* Full width on mobile */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .btn-field{
-  width: 15vw;
+  width: 60vw; /* Full width button on mobile */
 }
+
+/* Medium Screens (Tablets) */
+@media (min-width: 600px) {
+  .buttons {
+    flex-direction: row; /* Switch to row layout on larger screens */
+    gap: 40px;
+  }
+
+  .login-container,
+  .home-container {
+    width: 85vw;
+  }
+
+  .section {
+    width: 75vw;
+    margin: 30px;
+  }
+
+  .form-box {
+    margin: 0 auto;
+    width: 60vw; /* Smaller form width for tablets */
+    padding: 30px;
+  }
+
+  .btn-field {
+    width: 40vw;
+  }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 992px) {
+  .buttons {
+    width: 70vw;
+    height: 10vh;
+    gap: 70px;
+  }
+
+  .login-container {
+    margin: 0 auto;
+    width: 70vw;
+  }
+
+  .home-container {
+    width: 70vw;
+  }
+
+  .section {
+    margin: 50px 150px;
+    width: 60vw;
+    height: 70vh;
+  }
+
+  .box {
+    width: 150px;
+  }
+
+  .form-box {
+    margin: 0 auto;
+    width: 40vw;
+    height: 70vh;
+  }
+
+  .btn-field {
+    width: 15vw;
+  }
+}
+
 
 

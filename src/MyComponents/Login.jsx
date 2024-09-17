@@ -15,7 +15,6 @@ export default function Login({isAuthentic}) {
     const [isSignIn, setIsSignIn] = useState(false);
     const [serverResponse, setServerResponse] = useState("");
     const emailRef = useRef(null);
-    let routePath = "";
     const navigate = useNavigate();
     const toggleTitle = ()=>{
         setTitle(title === "Sign In" ? "Sign Up" : "Sign In");    
@@ -23,16 +22,15 @@ export default function Login({isAuthentic}) {
     useEffect(()=>{
         emailRef.current.style.display = title==="Sign In" ? "none" : "block";
         setIsSignIn(title === "Sign In" ? true : false);
-        routePath = title.split(" ").join("").toLowerCase();
-        console.log("Route =>"+routePath);
     }, [title])
 
     const handleChange = (e)=>{
         setValues({...values, [e.target.name] : [e.target.value]})
     }
     const handleSubmit = (e)=>{
-        e.preventDefault();         
-        axios.post(baseURL+"/"+"signin", values)
+        e.preventDefault();  
+        let routePath = title.split(" ").join("").toLowerCase();       
+        axios.post(baseURL+"/"+routePath, values)
         .then(res => {
             if(title === "Sign In"){   // Changed To Title Check From Now
                 if(res.status===200 && res.data.message === "User Found"){
@@ -40,7 +38,6 @@ export default function Login({isAuthentic}) {
                     setServerResponse(res.data.message);
                     localStorage.setItem("authToken", "true")
                     isAuthentic(true);
-                    // routePath.("/home");
                 }else{
                     console.log("Login Failed", res.data.message);
                     setServerResponse(res.data.message);
@@ -93,7 +90,7 @@ export default function Login({isAuthentic}) {
                             
                             <div className="btn-field" style={{marginTop: "30px"}}>
                                 <button type="button-sign-up" className="signUpBtn">{title}</button> 
-                                {isSignIn ? <p onClick={resetPasswordPage}>Forgot Password?</p> : ""}                                
+                                {isSignIn ? <p style={{cursor: "pointer"}} onClick={resetPasswordPage}>Forgot Password?</p> : ""}                                
                                 <p onClick={toggleTitle} style={{cursor: "pointer"}}>{isSignIn ? "GoTo Sign Up" : "GoTo Sign In"}</p>
                                 {serverResponse && <p style={{textAlign: "center"}}>{serverResponse}</p>}
                             </div>

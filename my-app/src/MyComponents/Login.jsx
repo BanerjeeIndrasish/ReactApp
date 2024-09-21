@@ -1,9 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react'
 import {useNavigate} from "react-router-dom";
-require('dotenv').config();
 
-const baseURL = process.env.REACT_APP_API_URL;
+const baseURL = import.meta.env.REACT_APP_API_URL;
 
 export default function Login({isAuthentic}) {
     const [values , setValues] = useState({

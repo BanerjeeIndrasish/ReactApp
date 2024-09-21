@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import {useNavigate} from "react-router-dom";
+require('dotenv').config();
 
-const baseURL = 'http://localhost:3001';
+const baseURL = process.env.REACT_APP_API_URL;
 export default function ResetPassword() {
   const [email, setEmail] = useState("");
   const [otp, setOTP] = useState("");

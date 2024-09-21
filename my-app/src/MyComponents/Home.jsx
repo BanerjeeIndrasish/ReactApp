@@ -4,6 +4,8 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import Button from "@mui/material/Button";
 import IconButton from '@mui/material/IconButton';
 import AddIcon from '@mui/icons-material/Add';
+require('dotenv').config();
+
 
 export default function Home(){
     const [developerData, setDeveloperData] = useState([]);
@@ -12,7 +14,7 @@ export default function Home(){
     const [projectData, setProjectData] = useState([]);
 
     const fetchData = (dataType)=>{
-        axios.get(`http://localhost:3001/${dataType}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/${dataType}`)  //http://localhost:3001
         .then(res => res.data)
         .then(data => {
             switch(dataType){
